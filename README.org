@@ -1,0 +1,5 @@
+* How to use
+- Install [[https://autohotkey.com/download/][AutoHotkeyV2]] 
+- Ensure both =.ahk= files are in the same directory
+- Load =virtualdesktops.ahk= into AutoHotkey (or double click it)
+
