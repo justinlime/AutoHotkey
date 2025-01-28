@@ -31,9 +31,9 @@ VD.createUntil(10)
 !9::VD.goToDesktopNum(9)
 !0::VD.goToDesktopNum(10)
 ;; Switch to desktop to the left
-!h::VD.goToRelativeDesktopNum(-1)
+;; !h::VD.goToRelativeDesktopNum(-1)
 ;; Switch to desktop to the right
-!l::VD.goToRelativeDesktopNum(+1)
+;; !l::VD.goToRelativeDesktopNum(+1)
 
 ;; Move the active window to another desktop, and switch to that desktop
 !+1::VD.MoveWindowToDesktopNum("A",1).follow()
@@ -47,9 +47,9 @@ VD.createUntil(10)
 !+9::VD.MoveWindowToDesktopNum("A",9).follow()
 !+0::VD.MoveWindowToDesktopNum("A",10).follow()
 ;; Move active window to the desktop to the left, and switch to it
-!+h::VD.MoveWindowToRelativeDesktopNum("A", -1).follow()
+;; !+h::VD.MoveWindowToRelativeDesktopNum("A", -1).follow()
 ;; Move active window to the desktop to the right, and switch to it
-!+l::VD.MoveWindowToRelativeDesktopNum("A", 1).follow()
+;; !+l::VD.MoveWindowToRelativeDesktopNum("A", 1).follow()
 
 ;; Fullscreen and restore active window
 !f:: {
@@ -61,4 +61,10 @@ VD.createUntil(10)
     }
     isfullscreen := !isfullscreen
 }
-    
+
+;; Rebind arrow keys
+!h::Send("{Left}")
+!j::Send("{Down}")
+!k::Send("{Up}")
+!l::Send("{Right}")
+
