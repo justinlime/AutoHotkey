@@ -1,7 +1,10 @@
 ﻿#Include "VD.ahk"
 #SingleInstance force
-VD.createUntil(10)
 
+;; Create 10 desktops to start
+VD.createUntil(10)
+;; ! means "Alt"
+;; Alt+1, Alt+2, etc
 !1::VD.goToDesktopNum(1)
 !2::VD.goToDesktopNum(2)
 !3::VD.goToDesktopNum(3)
